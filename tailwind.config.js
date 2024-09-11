@@ -1,7 +1,11 @@
 module.exports = {
     content: ["./src/**/*.{html,js}"],
     theme: {
-      extend: {},
+      extend: {
+        minHeight: {
+          '780': '780px', // Add custom min-height
+        },
+      },
     },
     plugins: [],
   }
