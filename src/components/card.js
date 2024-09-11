@@ -21,10 +21,11 @@ export const Card = ({movie}) => {
                         ? (
                         <>
                             {overview.substring(0, overview.lastIndexOf(' ', 250))}...
-                            <Link to={`/movie/${id}`}><span className="text-blue-600 cursor-pointer"> Read more</span></Link>
+                            
                         </>
                         ) 
                         : overview}
+                        <Link to={`/movie/${id}`}><span className="text-blue-600 cursor-pointer"> Read more</span></Link>
                     </p>
                 
                 </div>
