@@ -4,7 +4,7 @@ export const Card = ({movie}) => {
     const image = `https://image.tmdb.org/t/p/w500/${poster_path}`
     return(
         <div className="w-72 p-3">
-            <div className="bg-white  min-h-780 relative shadow-lg hover:shadow-xl transition duration-500 rounded-lg  justify-center ">
+            <div className="bg-white min-h-780 relative shadow-lg hover:shadow-xl transition duration-500 rounded-lg  justify-center ">
                 <div className="rounded-t-lg min-h-96 place-items-stretch ">
                     <Link to={`/movie/${id}`}>
                         <img className="rounded-t-lg h-fit " src={image} alt="" />
